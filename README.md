@@ -31,7 +31,7 @@ The project adopts a two-stage training strategy combined with advanced hash enc
 | S³Gaussian | 30.10 | 0.895 | 0.113 | 23.78 | 0.728 |
 | **Ours** | **34.06** | **0.947** | **0.045** | **28.97** | **0.871** |
 
-💡 **Highlights**: Compared with S³Gaussian, PSNR improved by **+3.96 dB**, LPIPS decreased by **60%**, and memory usage was reduced by half.
+💡 **Highlights**: Compared with S³Gaussian (baseline), PSNR improved by **+3.96 dB**, LPIPS decreased by **60%**, and memory usage was reduced by half.
 
 ### 2. Ablation Study (Waymo-NOTR, dynamic32)
 | Setting | PSNR↑ | LPIPS↓ | Memory (GB) | Time (h) |
@@ -324,6 +324,7 @@ python preprocess_main.py --data_root data/waymo/raw/ --target_dir data/waymo/pr
 python eval_metrics.py --model_path ./work_dirs/my_experiment --iteration 50000
 
 ```
+
 
 
 
