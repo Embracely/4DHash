@@ -18,7 +18,7 @@ The project adopts a two-stage training strategy combined with advanced hash enc
 - ✅ **Self-supervised learning**: No additional annotations required, training only with multi-view images
 - ✅ **High-quality rendering**: Supports real-time rendering and high-quality novel view synthesis
 
-![pipeline](./assets/pipeline.png)
+![pipeline](./assets/overall structure.png)
 
 ## 📊 Key Experimental Results from the Paper
 
@@ -324,6 +324,7 @@ python preprocess_main.py --data_root data/waymo/raw/ --target_dir data/waymo/pr
 python eval_metrics.py --model_path ./work_dirs/my_experiment --iteration 50000
 
 ```
+
 
 
 
